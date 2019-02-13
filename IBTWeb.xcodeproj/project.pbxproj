@@ -15,10 +15,38 @@
 		C1F8422C2212B903007288FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8422B2212B903007288FC /* main.m */; };
 		C1F842362212B903007288FC /* IBTWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842352212B903007288FC /* IBTWebTests.m */; };
 		C1F842412212B903007288FC /* IBTWebUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842402212B903007288FC /* IBTWebUITests.m */; };
-		C1F842582212BB78007288FC /* mpjs.js in Resources */ = {isa = PBXBuildFile; fileRef = C1F842522212BB77007288FC /* mpjs.js */; };
+		C1F842582212BB78007288FC /* ibtjs.js in Resources */ = {isa = PBXBuildFile; fileRef = C1F842522212BB77007288FC /* ibtjs.js */; };
 		C1F842592212BB78007288FC /* WebView_LoadFail_Refresh_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F842542212BB77007288FC /* WebView_LoadFail_Refresh_Icon@2x.png */; };
 		C1F8425A2212BB78007288FC /* WebView_LoadFail_Refresh_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F842552212BB77007288FC /* WebView_LoadFail_Refresh_Icon.png */; };
-		C1F8425B2212BB78007288FC /* IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md in Resources */ = {isa = PBXBuildFile; fileRef = C1F842572212BB77007288FC /* IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md */; };
+		C1F8426E2212BEBD007288FC /* IBTService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842662212BEBD007288FC /* IBTService.m */; };
+		C1F8426F2212BEBD007288FC /* IBTServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842672212BEBD007288FC /* IBTServiceCenter.m */; };
+		C1F842702212BEBD007288FC /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8426D2212BEBD007288FC /* EXTScope.m */; };
+		C1F842732212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842722212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.m */; };
+		C1F842762212C037007288FC /* IBTWKWebViewScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842752212C037007288FC /* IBTWKWebViewScriptMessageHandler.m */; };
+		C1F842792212C091007288FC /* IBTWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842782212C091007288FC /* IBTWKWebView.m */; };
+		C1F8427F2212C216007288FC /* UIView+IBTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8427E2212C216007288FC /* UIView+IBTExtend.m */; };
+		C1F842822212C2A8007288FC /* IBTWebViewPresetUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842812212C2A8007288FC /* IBTWebViewPresetUI.m */; };
+		C1F842862212C350007288FC /* IBTWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842852212C350007288FC /* IBTWKWebViewController.m */; };
+		C1F842892212C60B007288FC /* UIViewController+IBTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842882212C60B007288FC /* UIViewController+IBTExtend.m */; };
+		C1F8428C2212C6B0007288FC /* UIDevice+IBTHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8428B2212C6B0007288FC /* UIDevice+IBTHardware.m */; };
+		C1F8428F2212C758007288FC /* IBTWKWebUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8428E2212C758007288FC /* IBTWKWebUtil.m */; };
+		C1F842922212C7A7007288FC /* IBTWKWebJSLogicImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842912212C7A7007288FC /* IBTWKWebJSLogicImpl.m */; };
+		C1F842952212C95A007288FC /* NSObject+IBTJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842942212C95A007288FC /* NSObject+IBTJSON.m */; };
+		C1F842982212CA3E007288FC /* IBTWebJSEventHandlerFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842972212CA3E007288FC /* IBTWebJSEventHandlerFacade.m */; };
+		C1F8429C2212CB3B007288FC /* IBTWebJSEventHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F8429B2212CB3B007288FC /* IBTWebJSEventHandlerBase.m */; };
+		C1F842A32212CC51007288FC /* IBTJSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842A22212CC51007288FC /* IBTJSEvent.m */; };
+		C1F842A72212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842A62212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.m */; };
+		C1F842AA2212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842A92212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.m */; };
+		C1F842AD2212CF52007288FC /* IBTWebJSEventHandler_log.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842AC2212CF52007288FC /* IBTWebJSEventHandler_log.m */; };
+		C1F842B02212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842AF2212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.m */; };
+		C1F842B32212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842B22212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.m */; };
+		C1F842BA2212D1FC007288FC /* IbtjsbridgeDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = C1F842B62212D1FC007288FC /* IbtjsbridgeDemo.html */; };
+		C1F842BB2212D1FC007288FC /* 2_0AllInOneDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = C1F842B72212D1FC007288FC /* 2_0AllInOneDemo.html */; };
+		C1F842BE2212D273007288FC /* IBTJSBWebViewDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842BD2212D273007288FC /* IBTJSBWebViewDemoController.m */; };
+		C1F842C12212D357007288FC /* IBTWebJSEventHandler_alert.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842C02212D357007288FC /* IBTWebJSEventHandler_alert.m */; };
+		C1F842C42212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842C32212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.m */; };
+		C1F842C72212D41C007288FC /* IBTWebJSEventHandler_jsCallAllInOne.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842C62212D41B007288FC /* IBTWebJSEventHandler_jsCallAllInOne.m */; };
+		C1F842CA2212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F842C92212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +83,72 @@
 		C1F8423C2212B903007288FC /* IBTWebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBTWebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F842402212B903007288FC /* IBTWebUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebUITests.m; sourceTree = "<group>"; };
 		C1F842422212B903007288FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1F842522212BB77007288FC /* mpjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mpjs.js; sourceTree = "<group>"; };
+		C1F842522212BB77007288FC /* ibtjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ibtjs.js; sourceTree = "<group>"; };
 		C1F842542212BB77007288FC /* WebView_LoadFail_Refresh_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WebView_LoadFail_Refresh_Icon@2x.png"; sourceTree = "<group>"; };
 		C1F842552212BB77007288FC /* WebView_LoadFail_Refresh_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WebView_LoadFail_Refresh_Icon.png; sourceTree = "<group>"; };
-		C1F842572212BB77007288FC /* IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md"; sourceTree = "<group>"; };
+		C1F842622212BDD9007288FC /* IBTWKWebViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebViewDelegate.h; sourceTree = "<group>"; };
+		C1F842632212BE46007288FC /* IBTWKWebViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebViewInterface.h; sourceTree = "<group>"; };
+		C1F842662212BEBD007288FC /* IBTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTService.m; sourceTree = "<group>"; };
+		C1F842672212BEBD007288FC /* IBTServiceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTServiceCenter.m; sourceTree = "<group>"; };
+		C1F842682212BEBD007288FC /* IBTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTService.h; sourceTree = "<group>"; };
+		C1F842692212BEBD007288FC /* IBTServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTServiceCenter.h; sourceTree = "<group>"; };
+		C1F8426B2212BEBD007288FC /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		C1F8426C2212BEBD007288FC /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		C1F8426D2212BEBD007288FC /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		C1F842712212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebViewProcessPoolMgr.h; sourceTree = "<group>"; };
+		C1F842722212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebViewProcessPoolMgr.m; sourceTree = "<group>"; };
+		C1F842742212C037007288FC /* IBTWKWebViewScriptMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebViewScriptMessageHandler.h; sourceTree = "<group>"; };
+		C1F842752212C037007288FC /* IBTWKWebViewScriptMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebViewScriptMessageHandler.m; sourceTree = "<group>"; };
+		C1F842772212C091007288FC /* IBTWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebView.h; sourceTree = "<group>"; };
+		C1F842782212C091007288FC /* IBTWKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebView.m; sourceTree = "<group>"; };
+		C1F8427C2212C1D3007288FC /* IBTMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTMacro.h; sourceTree = "<group>"; };
+		C1F8427D2212C216007288FC /* UIView+IBTExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+IBTExtend.h"; sourceTree = "<group>"; };
+		C1F8427E2212C216007288FC /* UIView+IBTExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBTExtend.m"; sourceTree = "<group>"; };
+		C1F842802212C2A8007288FC /* IBTWebViewPresetUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebViewPresetUI.h; sourceTree = "<group>"; };
+		C1F842812212C2A8007288FC /* IBTWebViewPresetUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebViewPresetUI.m; sourceTree = "<group>"; };
+		C1F842832212C313007288FC /* IBTWebViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebViewControllerDelegate.h; sourceTree = "<group>"; };
+		C1F842842212C350007288FC /* IBTWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebViewController.h; sourceTree = "<group>"; };
+		C1F842852212C350007288FC /* IBTWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebViewController.m; sourceTree = "<group>"; };
+		C1F842872212C60B007288FC /* UIViewController+IBTExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IBTExtend.h"; sourceTree = "<group>"; };
+		C1F842882212C60B007288FC /* UIViewController+IBTExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IBTExtend.m"; sourceTree = "<group>"; };
+		C1F8428A2212C6B0007288FC /* UIDevice+IBTHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IBTHardware.h"; sourceTree = "<group>"; };
+		C1F8428B2212C6B0007288FC /* UIDevice+IBTHardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IBTHardware.m"; sourceTree = "<group>"; };
+		C1F8428D2212C758007288FC /* IBTWKWebUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebUtil.h; sourceTree = "<group>"; };
+		C1F8428E2212C758007288FC /* IBTWKWebUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebUtil.m; sourceTree = "<group>"; };
+		C1F842902212C7A7007288FC /* IBTWKWebJSLogicImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWKWebJSLogicImpl.h; sourceTree = "<group>"; };
+		C1F842912212C7A7007288FC /* IBTWKWebJSLogicImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWKWebJSLogicImpl.m; sourceTree = "<group>"; };
+		C1F842932212C95A007288FC /* NSObject+IBTJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+IBTJSON.h"; sourceTree = "<group>"; };
+		C1F842942212C95A007288FC /* NSObject+IBTJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IBTJSON.m"; sourceTree = "<group>"; };
+		C1F842962212CA3E007288FC /* IBTWebJSEventHandlerFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandlerFacade.h; sourceTree = "<group>"; };
+		C1F842972212CA3E007288FC /* IBTWebJSEventHandlerFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandlerFacade.m; sourceTree = "<group>"; };
+		C1F842992212CA60007288FC /* IBTWebJSEventHandlerBaseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandlerBaseDelegate.h; sourceTree = "<group>"; };
+		C1F8429A2212CB3B007288FC /* IBTWebJSEventHandlerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandlerBase.h; sourceTree = "<group>"; };
+		C1F8429B2212CB3B007288FC /* IBTWebJSEventHandlerBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandlerBase.m; sourceTree = "<group>"; };
+		C1F8429D2212CB57007288FC /* IBTWebJSEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler.h; sourceTree = "<group>"; };
+		C1F842A12212CC51007288FC /* IBTJSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTJSEvent.h; sourceTree = "<group>"; };
+		C1F842A22212CC51007288FC /* IBTJSEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTJSEvent.m; sourceTree = "<group>"; };
+		C1F842A52212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_openUrlByExtBrowser.h; sourceTree = "<group>"; };
+		C1F842A62212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_openUrlByExtBrowser.m; sourceTree = "<group>"; };
+		C1F842A82212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_closeWindow.h; sourceTree = "<group>"; };
+		C1F842A92212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_closeWindow.m; sourceTree = "<group>"; };
+		C1F842AB2212CF52007288FC /* IBTWebJSEventHandler_log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_log.h; sourceTree = "<group>"; };
+		C1F842AC2212CF52007288FC /* IBTWebJSEventHandler_log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_log.m; sourceTree = "<group>"; };
+		C1F842AE2212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_setPageTitle.h; sourceTree = "<group>"; };
+		C1F842AF2212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_setPageTitle.m; sourceTree = "<group>"; };
+		C1F842B12212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_disableBounceScroll.h; sourceTree = "<group>"; };
+		C1F842B22212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_disableBounceScroll.m; sourceTree = "<group>"; };
+		C1F842B62212D1FC007288FC /* IbtjsbridgeDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = IbtjsbridgeDemo.html; sourceTree = "<group>"; };
+		C1F842B72212D1FC007288FC /* 2_0AllInOneDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 2_0AllInOneDemo.html; sourceTree = "<group>"; };
+		C1F842BC2212D273007288FC /* IBTJSBWebViewDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTJSBWebViewDemoController.h; sourceTree = "<group>"; };
+		C1F842BD2212D273007288FC /* IBTJSBWebViewDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTJSBWebViewDemoController.m; sourceTree = "<group>"; };
+		C1F842BF2212D357007288FC /* IBTWebJSEventHandler_alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_alert.h; sourceTree = "<group>"; };
+		C1F842C02212D357007288FC /* IBTWebJSEventHandler_alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_alert.m; sourceTree = "<group>"; };
+		C1F842C22212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_testCallFromOC.h; sourceTree = "<group>"; };
+		C1F842C32212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_testCallFromOC.m; sourceTree = "<group>"; };
+		C1F842C52212D41B007288FC /* IBTWebJSEventHandler_jsCallAllInOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_jsCallAllInOne.h; sourceTree = "<group>"; };
+		C1F842C62212D41B007288FC /* IBTWebJSEventHandler_jsCallAllInOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_jsCallAllInOne.m; sourceTree = "<group>"; };
+		C1F842C82212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTWebJSEventHandler_jsCallQueryAPP.h; sourceTree = "<group>"; };
+		C1F842C92212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTWebJSEventHandler_jsCallQueryAPP.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +200,12 @@
 			isa = PBXGroup;
 			children = (
 				C1F8424E2212BB77007288FC /* IBTWeb */,
+				C1F842642212BEBD007288FC /* Vendor */,
 				C1F8421C2212B902007288FC /* AppDelegate.h */,
 				C1F8421D2212B902007288FC /* AppDelegate.m */,
 				C1F8421F2212B902007288FC /* ViewController.h */,
 				C1F842202212B902007288FC /* ViewController.m */,
+				C1F842B42212D1FC007288FC /* Demo */,
 				C1F842222212B902007288FC /* Main.storyboard */,
 				C1F842252212B903007288FC /* Assets.xcassets */,
 				C1F842272212B903007288FC /* LaunchScreen.storyboard */,
@@ -148,7 +240,6 @@
 				C1F842562212BB77007288FC /* WebViewController */,
 				C1F8424F2212BB77007288FC /* JSAPI */,
 				C1F842512212BB77007288FC /* Resource */,
-				C1F842572212BB77007288FC /* IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md */,
 			);
 			path = IBTWeb;
 			sourceTree = "<group>";
@@ -156,6 +247,7 @@
 		C1F8424F2212BB77007288FC /* JSAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C1F842A42212CE04007288FC /* InnerAPIs */,
 				C1F8425C2212BC2B007288FC /* Model */,
 			);
 			path = JSAPI;
@@ -164,6 +256,9 @@
 		C1F842502212BB77007288FC /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				C1F842612212BD57007288FC /* Controller */,
+				C1F8425F2212BD57007288FC /* Model */,
+				C1F842602212BD57007288FC /* View */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -171,7 +266,7 @@
 		C1F842512212BB77007288FC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				C1F842522212BB77007288FC /* mpjs.js */,
+				C1F842522212BB77007288FC /* ibtjs.js */,
 				C1F842532212BB77007288FC /* images */,
 			);
 			path = Resource;
@@ -198,6 +293,14 @@
 		C1F8425C2212BC2B007288FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1F842962212CA3E007288FC /* IBTWebJSEventHandlerFacade.h */,
+				C1F842972212CA3E007288FC /* IBTWebJSEventHandlerFacade.m */,
+				C1F842992212CA60007288FC /* IBTWebJSEventHandlerBaseDelegate.h */,
+				C1F8429A2212CB3B007288FC /* IBTWebJSEventHandlerBase.h */,
+				C1F8429B2212CB3B007288FC /* IBTWebJSEventHandlerBase.m */,
+				C1F8429D2212CB57007288FC /* IBTWebJSEventHandler.h */,
+				C1F842A12212CC51007288FC /* IBTJSEvent.h */,
+				C1F842A22212CC51007288FC /* IBTJSEvent.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +308,10 @@
 		C1F8425D2212BC42007288FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1F8428D2212C758007288FC /* IBTWKWebUtil.h */,
+				C1F8428E2212C758007288FC /* IBTWKWebUtil.m */,
+				C1F842902212C7A7007288FC /* IBTWKWebJSLogicImpl.h */,
+				C1F842912212C7A7007288FC /* IBTWKWebJSLogicImpl.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,8 +319,157 @@
 		C1F8425E2212BC42007288FC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C1F842842212C350007288FC /* IBTWKWebViewController.h */,
+				C1F842852212C350007288FC /* IBTWKWebViewController.m */,
+				C1F842832212C313007288FC /* IBTWebViewControllerDelegate.h */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F8425F2212BD57007288FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842802212C2A8007288FC /* IBTWebViewPresetUI.h */,
+				C1F842812212C2A8007288FC /* IBTWebViewPresetUI.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1F842602212BD57007288FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842772212C091007288FC /* IBTWKWebView.h */,
+				C1F842782212C091007288FC /* IBTWKWebView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1F842612212BD57007288FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842742212C037007288FC /* IBTWKWebViewScriptMessageHandler.h */,
+				C1F842752212C037007288FC /* IBTWKWebViewScriptMessageHandler.m */,
+				C1F842712212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.h */,
+				C1F842722212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.m */,
+				C1F842622212BDD9007288FC /* IBTWKWebViewDelegate.h */,
+				C1F842632212BE46007288FC /* IBTWKWebViewInterface.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F842642212BEBD007288FC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C1F8427B2212C1C1007288FC /* Macro */,
+				C1F8427A2212C1BC007288FC /* Category */,
+				C1F842652212BEBD007288FC /* ServiceCenter */,
+				C1F8426A2212BEBD007288FC /* libextobjc */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		C1F842652212BEBD007288FC /* ServiceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842682212BEBD007288FC /* IBTService.h */,
+				C1F842662212BEBD007288FC /* IBTService.m */,
+				C1F842692212BEBD007288FC /* IBTServiceCenter.h */,
+				C1F842672212BEBD007288FC /* IBTServiceCenter.m */,
+			);
+			path = ServiceCenter;
+			sourceTree = "<group>";
+		};
+		C1F8426A2212BEBD007288FC /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				C1F8426B2212BEBD007288FC /* EXTScope.h */,
+				C1F8426C2212BEBD007288FC /* metamacros.h */,
+				C1F8426D2212BEBD007288FC /* EXTScope.m */,
+			);
+			path = libextobjc;
+			sourceTree = "<group>";
+		};
+		C1F8427A2212C1BC007288FC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C1F8427D2212C216007288FC /* UIView+IBTExtend.h */,
+				C1F8427E2212C216007288FC /* UIView+IBTExtend.m */,
+				C1F842872212C60B007288FC /* UIViewController+IBTExtend.h */,
+				C1F842882212C60B007288FC /* UIViewController+IBTExtend.m */,
+				C1F8428A2212C6B0007288FC /* UIDevice+IBTHardware.h */,
+				C1F8428B2212C6B0007288FC /* UIDevice+IBTHardware.m */,
+				C1F842932212C95A007288FC /* NSObject+IBTJSON.h */,
+				C1F842942212C95A007288FC /* NSObject+IBTJSON.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C1F8427B2212C1C1007288FC /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C1F8427C2212C1D3007288FC /* IBTMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C1F842A42212CE04007288FC /* InnerAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842A52212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.h */,
+				C1F842A62212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.m */,
+				C1F842A82212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.h */,
+				C1F842A92212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.m */,
+				C1F842AB2212CF52007288FC /* IBTWebJSEventHandler_log.h */,
+				C1F842AC2212CF52007288FC /* IBTWebJSEventHandler_log.m */,
+				C1F842AE2212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.h */,
+				C1F842AF2212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.m */,
+				C1F842B12212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.h */,
+				C1F842B22212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.m */,
+			);
+			path = InnerAPIs;
+			sourceTree = "<group>";
+		};
+		C1F842B42212D1FC007288FC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842B52212D1FC007288FC /* Resource */,
+				C1F842B82212D1FC007288FC /* Controller */,
+				C1F842B92212D1FC007288FC /* Model */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		C1F842B52212D1FC007288FC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842B62212D1FC007288FC /* IbtjsbridgeDemo.html */,
+				C1F842B72212D1FC007288FC /* 2_0AllInOneDemo.html */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C1F842B82212D1FC007288FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842BC2212D273007288FC /* IBTJSBWebViewDemoController.h */,
+				C1F842BD2212D273007288FC /* IBTJSBWebViewDemoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F842B92212D1FC007288FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1F842BF2212D357007288FC /* IBTWebJSEventHandler_alert.h */,
+				C1F842C02212D357007288FC /* IBTWebJSEventHandler_alert.m */,
+				C1F842C22212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.h */,
+				C1F842C32212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.m */,
+				C1F842C52212D41B007288FC /* IBTWebJSEventHandler_jsCallAllInOne.h */,
+				C1F842C62212D41B007288FC /* IBTWebJSEventHandler_jsCallAllInOne.m */,
+				C1F842C82212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.h */,
+				C1F842C92212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,11 +575,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F8425B2212BB78007288FC /* IBTWKWebView JavaScript 与 Objective-C 交互使用文档.md in Resources */,
-				C1F842582212BB78007288FC /* mpjs.js in Resources */,
+				C1F842582212BB78007288FC /* ibtjs.js in Resources */,
 				C1F842292212B903007288FC /* LaunchScreen.storyboard in Resources */,
 				C1F842262212B903007288FC /* Assets.xcassets in Resources */,
 				C1F842242212B902007288FC /* Main.storyboard in Resources */,
+				C1F842BA2212D1FC007288FC /* IbtjsbridgeDemo.html in Resources */,
+				C1F842BB2212D1FC007288FC /* 2_0AllInOneDemo.html in Resources */,
 				C1F8425A2212BB78007288FC /* WebView_LoadFail_Refresh_Icon.png in Resources */,
 				C1F842592212BB78007288FC /* WebView_LoadFail_Refresh_Icon@2x.png in Resources */,
 			);
@@ -350,9 +607,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F842702212BEBD007288FC /* EXTScope.m in Sources */,
+				C1F8429C2212CB3B007288FC /* IBTWebJSEventHandlerBase.m in Sources */,
+				C1F842B02212CFB6007288FC /* IBTWebJSEventHandler_setPageTitle.m in Sources */,
+				C1F842792212C091007288FC /* IBTWKWebView.m in Sources */,
 				C1F842212212B902007288FC /* ViewController.m in Sources */,
+				C1F8426F2212BEBD007288FC /* IBTServiceCenter.m in Sources */,
+				C1F842A72212CE2A007288FC /* IBTWebJSEventHandler_openUrlByExtBrowser.m in Sources */,
+				C1F8428F2212C758007288FC /* IBTWKWebUtil.m in Sources */,
+				C1F842762212C037007288FC /* IBTWKWebViewScriptMessageHandler.m in Sources */,
+				C1F842B32212CFFC007288FC /* IBTWebJSEventHandler_disableBounceScroll.m in Sources */,
 				C1F8422C2212B903007288FC /* main.m in Sources */,
+				C1F842CA2212D447007288FC /* IBTWebJSEventHandler_jsCallQueryAPP.m in Sources */,
+				C1F842C12212D357007288FC /* IBTWebJSEventHandler_alert.m in Sources */,
+				C1F8427F2212C216007288FC /* UIView+IBTExtend.m in Sources */,
+				C1F842A32212CC51007288FC /* IBTJSEvent.m in Sources */,
+				C1F8428C2212C6B0007288FC /* UIDevice+IBTHardware.m in Sources */,
+				C1F842732212BEF5007288FC /* IBTWKWebViewProcessPoolMgr.m in Sources */,
+				C1F842822212C2A8007288FC /* IBTWebViewPresetUI.m in Sources */,
+				C1F842BE2212D273007288FC /* IBTJSBWebViewDemoController.m in Sources */,
+				C1F842862212C350007288FC /* IBTWKWebViewController.m in Sources */,
+				C1F842922212C7A7007288FC /* IBTWKWebJSLogicImpl.m in Sources */,
+				C1F842AA2212CEA8007288FC /* IBTWebJSEventHandler_closeWindow.m in Sources */,
+				C1F842C72212D41C007288FC /* IBTWebJSEventHandler_jsCallAllInOne.m in Sources */,
 				C1F8421E2212B902007288FC /* AppDelegate.m in Sources */,
+				C1F8426E2212BEBD007288FC /* IBTService.m in Sources */,
+				C1F842AD2212CF52007288FC /* IBTWebJSEventHandler_log.m in Sources */,
+				C1F842952212C95A007288FC /* NSObject+IBTJSON.m in Sources */,
+				C1F842892212C60B007288FC /* UIViewController+IBTExtend.m in Sources */,
+				C1F842982212CA3E007288FC /* IBTWebJSEventHandlerFacade.m in Sources */,
+				C1F842C42212D394007288FC /* IBTWebJSEventHandler_testCallFromOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +808,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YNA7CJZEF;
 				INFOPLIST_FILE = IBTWeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +825,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YNA7CJZEF;
 				INFOPLIST_FILE = IBTWeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

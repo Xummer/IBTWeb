@@ -3,7 +3,7 @@
 	function sendMsg(msg) {
 		sendMessageQueue.push(msg);
 		var msgs = _fetchQueue();
-		window.webkit.messageHandlers.mpDispatchMessage.postMessage(msgs);
+		window.webkit.messageHandlers.ibtDispatchMessage.postMessage(msgs);
 	}
 
 	function _fetchQueue() {
@@ -15,8 +15,8 @@
         return JSON.stringify(dicMsg);
 	}
 
-	function _handleMessageFromMP(dic) {
-		if (jsbridge._handleMessageFromMP !== _handleMessageFromMP) return "{}";
+	function _handleMessageFromIBT(dic) {
+		if (jsbridge._handleMessageFromIBT !== _handleMessageFromIBT) return "{}";
 		var jsonMsg = dic[ "__json_message" ];
 		var funcDic;
 		try {
@@ -78,7 +78,7 @@
 	}
 
 	function call(func, params, callback) {
-		if ("preInject" === document.__mpjsjs__isPreInject && !0 !== document.mpjsSysinit) {
+		if ("preInject" === document.__ibtjsjs__isPreInject && !0 !== document.ibtjsSysinit) {
 			var cb = {};
 			cb.params = params;
 			cb.callback = callback;
@@ -224,15 +224,15 @@
 
     var oalert = window.alert;
 	window.alert = function(text) {
-		if (! ("yes" === document.__mpjsjs__isWebviewWillClosed ||
-			   "yes" === document.__mpjsjs__isDisableAlertView)) {
+		if (! ("yes" === document.__ibtjsjs__isWebviewWillClosed ||
+			   "yes" === document.__ibtjsjs__isDisableAlertView)) {
 			return oalert(text);
 		}
 	};
 	var oprompt = window.prompt;
 	window.prompt = function(text, defaultText) {
-        if (! ("yes" === document.__mpjsjs__isWebviewWillClosed || 
-        	   "yes" === document.__mpjsjs__isDisableAlertView)) {
+        if (! ("yes" === document.__ibtjsjs__isWebviewWillClosed ||
+        	   "yes" === document.__ibtjsjs__isDisableAlertView)) {
         	return oprompt(text, defaultText);
         } 
     };
@@ -255,8 +255,8 @@
     	_fetchQueue: _fetchQueue,
     };
     try {
-    	Object.defineProperty(jsbridge, "_handleMessageFromMP", {
-    		value: _handleMessageFromMP,
+    	Object.defineProperty(jsbridge, "_handleMessageFromIBT", {
+    		value: _handleMessageFromIBT,
             writable: false,
             configurable: false
     	})
@@ -264,12 +264,12 @@
     catch(err) {
     	return;
     }
-    if (window.MPJSBridge) { 
-    	window.MPJSBridge = jsbridge;
+    if (window.IBTJSBridge) {
+    	window.IBTJSBridge = jsbridge;
     }
     else {
     	try {
-	        Object.defineProperty(window, "MPJSBridge", {
+	        Object.defineProperty(window, "IBTJSBridge", {
 	            value: jsbridge,
 	            writable: false,
 	            configurable: false
@@ -305,15 +305,15 @@
         	function(a) {
 	            z = a;
 	            a = document.createEvent("Events");
-	            a.initEvent("MPJSBridgeReady");
+	            a.initEvent("IBTJSBridgeReady");
 	            document.dispatchEvent(a);
 	            // ======= Start Adpat for webviewJSBridge =======
 	            a = document.createEvent("Events");
 	            a.initEvent("WebViewJavascriptBridgeReady");
 	            document.dispatchEvent(a);
 	            // ======= End Adpat for webviewJSBridge =======
-	            if ("preInject" === document.__mpjsjs__isPreInject) {
-	                document.mpjsSysinit = true;
+	            if ("preInject" === document.__ibtjsjs__isPreInject) {
+	                document.ibtjsSysinit = true;
 	                for (var b in waitingQueue) {
 	                	a = waitingQueue[b];
 	                	call(b, a.params, a.callback);
@@ -323,4 +323,4 @@
         });
 	})();
 })();
-window.__mpjs_is_injected_success = "yes";
+window.__ibtjs_is_injected_success = "yes";

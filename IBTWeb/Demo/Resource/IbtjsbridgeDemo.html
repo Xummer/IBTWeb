@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" /> 
+  <title>IBTJSBridgeHtmlDemo</title>
+ </head> 
+ <body> 
+  <article> 
+   <header></header> 
+   <div id="card"> 
+    <a href="javascript:void(0)" id="openWithSafari">用safari打开</a> 
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="setPageTitle">SetTitle Test</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="LogStr">Log("String")</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="LogObj">Log({"key":"value"})</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="disbounce">Disable Bounce</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="malert">Alert Test</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="closewindow">Close Window</a>
+    <br />
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="strParam">String Pramas</a>
+    <br />
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="fromOC">Call From OC Test</a>
+    <br />
+    <br /> 
+    <br /> 
+    <a href="http://www.baidu.com" id="web">Open another Web</a>
+    <br />
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="jsAlertTest">JS Alert Test</a>
+   </div> 
+  </article> 
+  <script>
+  var readyFunc = function onBridgeReady() {
+      // 绑定关注事件
+    document.querySelector('#openWithSafari').addEventListener('click', function(e){
+          IBTJSBridge.invoke('openUrlByExtBrowser',{
+              "url" : "http://www.qq.com",
+          },function(res){
+           IBTJSBridge.log(res);
+        });
+      });
+    document.querySelector('#setPageTitle').addEventListener('click', function(e){
+          IBTJSBridge.invoke('setPageTitle', { "title" : "JS setted Title!!"}, function(res){
+        });
+      });
+    document.querySelector('#LogStr').addEventListener('click', function(e){
+          IBTJSBridge.log("Str");
+      });
+    document.querySelector('#LogObj').addEventListener('click', function(e){
+          IBTJSBridge.log({"key":"value"});
+      });
+    document.querySelector('#disbounce').addEventListener('click', function(e){
+          IBTJSBridge.invoke('disableBounceScroll');
+      });
+    document.querySelector('#malert').addEventListener('click', function(e){
+          IBTJSBridge.invoke('alert',{
+                  "msg" : "zh-CN 中文 🇨🇳",
+              },function(res){
+               IBTJSBridge.log(res);
+            });
+      });
+
+    document.querySelector('#closewindow').addEventListener('click', function(e){
+          IBTJSBridge.invoke('closeWindow',{
+                  "immediate_close" : 0,
+              },function(res){
+               IBTJSBridge.log(res);
+            });
+      });
+    document.querySelector('#strParam').addEventListener('click', function(e){
+          IBTJSBridge.invoke('jsCallQueryAPP', "com.xummer.Plsiter",function(res){
+               IBTJSBridge.log(res);
+            });
+      });
+    document.querySelector('#fromOC').addEventListener('click', function(e){
+          IBTJSBridge.invoke('testCallFromOC');
+      });
+
+    // 注册给 OC 调用的 Event
+    IBTJSBridge.on("callFromOC", function(resDict) {
+      // resDict { "param" : "value" }
+      IBTJSBridge.invoke('alert',{
+            "msg" : resDict ? resDict : "callFromOC(no params)",
+        },function(res){
+         IBTJSBridge.log(res);
+      });
+
+    });
+
+
+    // JS 方法测试
+    document.querySelector('#jsAlertTest').addEventListener('click', function(e){
+          window.alert("JS Alert");
+      });
+  }
+  
+  if (typeof IBTJSBridge === "undefined") {
+    document.addEventListener('IBTJSBridgeReady', readyFunc, false);
+  } else {
+    readyFunc();
+  }
+  </script> 
+ </body>
+</html>

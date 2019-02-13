@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" /> 
+  <title>IBTJSBridgeHtmlDemo</title>
+ </head> 
+ <body> 
+  <article> 
+   <header></header> 
+   <div id="card"> 
+    <a href="javascript:void(0)" id="callQueryApp">jsCallQueryAPP</a> 
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="malert">Alert Test</a>
+    <br /> 
+    <br /> 
+    <br /> 
+    <a href="http://www.baidu.com" id="web">Open another Web</a>
+    <br />
+    <br /> 
+    <br /> 
+    <a href="javascript:void(0)" id="fromOC">Call From OC Test</a>
+    <br />
+    <br /> 
+    <br />
+    <a href="javascript:void(0)" id="jsAlertTest">JS Alert Test</a>
+   </div> 
+  </article> 
+  <script>
+  var readyFunc = function onBridgeReady(bridge) {
+      // 绑定关注事件
+    document.querySelector('#callQueryApp').addEventListener('click', function(e){
+          bridge.callHandler(
+            "jsCallAllInOne", 
+            { "method": "jsCallQueryAPP", 
+              "params": "com.apple.mobilesafari" }, 
+            function(response) {
+              IBTJSBridge.log(response);
+          });
+      });
+    document.querySelector('#malert').addEventListener('click', function(e){
+          bridge.callHandler(
+            'jsCallAllInOne', 
+            { "method": "alert", 
+              "params": { "msg": "zh-CN 中文 🇨🇳"} }, 
+            function(response){
+              IBTJSBridge.log(response);
+        });
+      });
+
+    // JS 方法测试
+    document.querySelector('#jsAlertTest').addEventListener('click', function(e){
+          window.alert("JS Alert");
+      });
+
+    document.querySelector('#fromOC').addEventListener('click', function(e){
+          bridge.callHandler('testCallFromOC');
+      });
+
+    // 注册给 OC 调用的 Event
+    bridge.registerHandler("callFromOC", function(resDict) {
+      // resDict { "param" : "value" }
+      bridge.callHandler('alert',{
+            "msg" : resDict ? resDict : "callFromOC(no params)",
+        },function(res){
+         IBTJSBridge.log(res);
+      });
+
+    });
+  }
+  
+  function setupWebViewJavascriptBridge(callback) {
+      if (window.WebViewJavascriptBridge) { callback(WebViewJavascriptBridge); }
+      else {
+        document.addEventListener("WebViewJavascriptBridgeReady", function() {
+          callback(WebViewJavascriptBridge);
+        }, false);
+      }
+  }
+
+  setupWebViewJavascriptBridge(readyFunc);
+  </script> 
+ </body>
+</html>
